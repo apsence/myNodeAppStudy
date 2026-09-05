@@ -6,7 +6,7 @@ function calculatePi() {
     for (let i = 0; i < 10000; i++) {
         pi += (i % 2 === 0 ? 1 : -1) / (2 * i + 1);
     }
-    return (pi * 4).toFixed(2); 
+    return (pi * 4).toFixed(4); 
 }
 
 const server = http.createServer((req, res) => {
