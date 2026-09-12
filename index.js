@@ -1,26 +1,84 @@
 const http = require('http');
+const EventEmitter = require('events');
+const logger = require('./logger');
 
-function calculatePi() {
-    let pi = 0;
-    
-    for (let i = 0; i < 10000; i++) {
-        pi += (i % 2 === 0 ? 1 : -1) / (2 * i + 1);
+class OrderHandler extends EventEmitter {
+    processOrder(orderId) {
+        this.emit('order:start', orderId);
+
+        setTimeout(() => {
+            this.emit('order:processing', orderId, "Идёт обработка...");
+        }, 2000);
+
+        setTimeout(() => {
+            const randomSum = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
+            this.emit('order:complete', orderId, randomSum);
+        }, 4000);
     }
-    return (pi * 4).toFixed(4); 
 }
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    
-    const fio = 'Грицкевич Александр Романович';
-    const group = '401 группа';
-    const piValue = calculatePi();
+const orderHandler = new OrderHandler();
 
-    
-    res.end(fio + "<br>" + group + "<br>Число ПИ:" + piValue);
+orderHandler.on('order:start', (orderId) => {
+    console.log(`→ [order:start] Заказ #${orderId} начат`);
 });
 
-const PORT = 3000;
-server.listen(PORT, () => {
-    console.log("Сервер запущен на http://localhost:${PORT}");
+orderHandler.on('order:processing', (orderId, text) => {
+    console.log(`→ Через 2 сек: [order:processing] Заказ #${orderId}: ${text}`);
 });
+
+orderHandler.on('order:complete', (orderId, sum) => {
+    console.log(`→ Через 4 сек: [order:complete] 💰 Заказ #${orderId} завершён на сумму ${sum} руб.`);
+});
+
+
+class AppServer extends EventEmitter {
+    constructor() {
+        super();
+        this.server = null;
+    }
+
+    start(port = 3000) {
+        this.server = http.createServer((req, res) => {
+            this.emit('request:received', { url: req.url, method: req.method });
+
+            if (req.method === 'GET' && req.url.startsWith('/order/')) {
+                const orderId = req.url.substring(7);
+
+                if (orderId) {
+                    orderHandler.processOrder(orderId);
+
+                    res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+                    res.end(`Заказ #${orderId} принят в обработку.`);
+                    return;
+                }
+            }
+
+            res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+            res.end('Hello from Event-Driven server!');
+        });
+
+        this.server.listen(port, () => {
+            this.emit('server:started', port);
+        });
+    }
+
+    stop() {
+        if (this.server) {
+            this.server.close(() => {
+                this.emit('server:stopped');
+            });
+        }
+    }
+}
+
+const app = new AppServer();
+
+logger.setupLogger(app);
+
+app.start(3000);
+
+setTimeout(() => {
+    console.log('Останавливаем сервер...');
+    app.stop();
+}, 15000);
