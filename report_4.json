@@ -1,0 +1,155 @@
+{
+  "scannedDirectory": "D:\\nodejsproj\\my-node-app-study",
+  "totalFiles": 81,
+  "totalFolders": 34,
+  "totalSize": {
+    "bytes": 116444,
+    "kb": "113.71 КБ",
+    "mb": "0.11 МБ"
+  },
+  "groupedByExtension": {
+    "[без расширения]": [
+      ".git\\COMMIT_EDITMSG",
+      ".git\\config",
+      ".git\\description",
+      ".git\\FETCH_HEAD",
+      ".git\\HEAD",
+      ".git\\index",
+      ".git\\info\\exclude",
+      ".git\\info\\refs",
+      ".git\\logs\\HEAD",
+      ".git\\logs\\refs\\heads\\feature\\createfil",
+      ".git\\logs\\refs\\heads\\feature\\event-loop-tasks",
+      ".git\\logs\\refs\\heads\\feature\\fileOperations",
+      ".git\\logs\\refs\\heads\\feature\\student-info",
+      ".git\\logs\\refs\\heads\\main",
+      ".git\\logs\\refs\\remotes\\origin\\HEAD",
+      ".git\\logs\\refs\\remotes\\origin\\main",
+      ".git\\objects\\57\\8774ba40dd0e86ce11373605a51168517dd274",
+      ".git\\objects\\c4\\8dab9f1b8259d5e22817e846a3799dd2fbf53a",
+      ".git\\objects\\f9\\ae26d95f99f21d8b858f986cb05091ce64ac02",
+      ".git\\objects\\info\\commit-graphs\\commit-graph-chain",
+      ".git\\objects\\info\\packs",
+      ".git\\objects\\pack\\multi-pack-index",
+      ".git\\ORIG_HEAD",
+      ".git\\refs\\heads\\feature\\createfil",
+      ".git\\refs\\heads\\feature\\event-loop-tasks",
+      ".git\\refs\\heads\\feature\\fileOperations",
+      ".git\\refs\\heads\\feature\\student-info",
+      ".git\\refs\\heads\\main",
+      ".git\\refs\\remotes\\origin\\HEAD",
+      ".git\\refs\\remotes\\origin\\main",
+      ".gitignore"
+    ],
+    ".sample": [
+      ".git\\hooks\\applypatch-msg.sample",
+      ".git\\hooks\\commit-msg.sample",
+      ".git\\hooks\\fsmonitor-watchman.sample",
+      ".git\\hooks\\post-update.sample",
+      ".git\\hooks\\pre-applypatch.sample",
+      ".git\\hooks\\pre-commit.sample",
+      ".git\\hooks\\pre-merge-commit.sample",
+      ".git\\hooks\\pre-push.sample",
+      ".git\\hooks\\pre-rebase.sample",
+      ".git\\hooks\\pre-receive.sample",
+      ".git\\hooks\\prepare-commit-msg.sample",
+      ".git\\hooks\\push-to-checkout.sample",
+      ".git\\hooks\\sendemail-validate.sample",
+      ".git\\hooks\\update.sample"
+    ],
+    ".graph": [
+      ".git\\objects\\info\\commit-graphs\\graph-0d3d058faa39cc9c30e6c84332a505c8856d4c8a.graph",
+      ".git\\objects\\info\\commit-graphs\\graph-772919c9131424d28e4e619eb42c4b036ac1cceb.graph"
+    ],
+    ".idx": [
+      ".git\\objects\\pack\\loose-ae167081d15a105919691c45e489592ec25fc9d1.idx",
+      ".git\\objects\\pack\\pack-f99b4b413be15fbb756da4567239075bc9ac6ae2.idx"
+    ],
+    ".pack": [
+      ".git\\objects\\pack\\loose-ae167081d15a105919691c45e489592ec25fc9d1.pack",
+      ".git\\objects\\pack\\pack-f99b4b413be15fbb756da4567239075bc9ac6ae2.pack"
+    ],
+    ".rev": [
+      ".git\\objects\\pack\\loose-ae167081d15a105919691c45e489592ec25fc9d1.rev",
+      ".git\\objects\\pack\\pack-f99b4b413be15fbb756da4567239075bc9ac6ae2.rev"
+    ],
+    ".js": [
+      "index.js",
+      "old\\fileOperations.js",
+      "old\\fileOperationsHybrid.js",
+      "old\\fileOperationsHybridTest.js",
+      "old\\fileOperationsPromises.js",
+      "old\\fileOperationsTest.js",
+      "old\\index.js",
+      "old\\logger.js",
+      "old\\test-promises.js"
+    ],
+    ".txt": [
+      "old\\logs.txt",
+      "project_4\\data\\info.txt",
+      "project_4\\data\\input\\info.txt",
+      "project_4\\data\\results\\info.txt",
+      "project_4\\info.txt",
+      "project_4\\src\\components\\info.txt",
+      "project_4\\src\\info.txt",
+      "project_4\\src\\modules\\info.txt",
+      "project_4\\src\\utils\\info.txt",
+      "student_4.txt"
+    ],
+    ".md": [
+      "project_4\\data\\input\\README.md",
+      "project_4\\data\\README.md",
+      "project_4\\data\\results\\README.md",
+      "project_4\\README.md",
+      "project_4\\src\\components\\README.md",
+      "project_4\\src\\modules\\README.md",
+      "project_4\\src\\README.md",
+      "project_4\\src\\utils\\README.md",
+      "README.md"
+    ]
+  },
+  "top5LargestFiles": [
+    {
+      "path": ".git\\logs\\refs\\remotes\\origin\\HEAD",
+      "size": "15476 байт (0.01 МБ)"
+    },
+    {
+      "path": ".git\\objects\\pack\\pack-f99b4b413be15fbb756da4567239075bc9ac6ae2.pack",
+      "size": "14132 байт (0.01 МБ)"
+    },
+    {
+      "path": "index.js",
+      "size": "10537 байт (0.01 МБ)"
+    },
+    {
+      "path": "old\\fileOperationsHybrid.js",
+      "size": "7740 байт (0.01 МБ)"
+    },
+    {
+      "path": ".git\\hooks\\pre-rebase.sample",
+      "size": "4898 байт (0.00 МБ)"
+    }
+  ],
+  "top5SmallestFiles": [
+    {
+      "path": ".gitignore",
+      "size": "30 байт"
+    },
+    {
+      "path": ".git\\refs\\remotes\\origin\\HEAD",
+      "size": "30 байт"
+    },
+    {
+      "path": ".git\\HEAD",
+      "size": "34 байт"
+    },
+    {
+      "path": ".git\\refs\\remotes\\origin\\main",
+      "size": "41 байт"
+    },
+    {
+      "path": ".git\\refs\\heads\\main",
+      "size": "41 байт"
+    }
+  ]
+}
