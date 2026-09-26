@@ -20,6 +20,9 @@
   "homepage": "https://github.com/apsence/myNodeAppStudy#readme",
   "dependencies": {
     "@koa/router": "^15.7.0",
+    "compression": "^1.8.2",
+    "docx": "^9.7.2",
+    "express": "^5.2.1",
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1"
   }
