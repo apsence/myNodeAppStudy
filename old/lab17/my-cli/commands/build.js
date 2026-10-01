@@ -2,7 +2,7 @@
 
 const ora = require('ora');
 const logger = require('../utils/logger');
-const buildService = require('c:/Users/SashaGritskevich/OneDrive/Рабочий стол/Новая папка/services/buildService');
+const buildService = require('../services/buildService');
 
 module.exports = (program) => {
   program

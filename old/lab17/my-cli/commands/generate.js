@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const reportService = require('c:/Users/SashaGritskevich/OneDrive/Рабочий стол/Новая папка/services/reportService');
+const reportService = require('../services/reportService');
 
 module.exports = (program) => {
   program

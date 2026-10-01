@@ -3,7 +3,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const logger = require('../utils/logger');
-const projectService = require('c:/Users/SashaGritskevich/OneDrive/Рабочий стол/Новая папка/services/projectService');
+const projectService = require('../services/projectService');
 
 const TYPE_CHOICES = [
   { name: 'Web-приложение', value: 'web' },

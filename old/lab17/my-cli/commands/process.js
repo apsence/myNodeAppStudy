@@ -2,7 +2,7 @@
 
 const cliProgress = require('cli-progress');
 const logger = require('../utils/logger');
-const fileProcessService = require('c:/Users/SashaGritskevich/OneDrive/Рабочий стол/Новая папка/services/fileProcessService');
+const fileProcessService = require('../services/fileProcessService');
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));

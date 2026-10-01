@@ -3,7 +3,7 @@
 const ora = require('ora');
 const inquirer = require('inquirer');
 const logger = require('../utils/logger');
-const deployService = require('c:/Users/SashaGritskevich/OneDrive/Рабочий стол/Новая папка/services/deployService');
+const deployService = require('../services/deployService');
 
 module.exports = (program) => {
   program
