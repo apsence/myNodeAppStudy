@@ -1,0 +1,38 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "Учебное CLI-приложение для лабораторной работы №17 (группа ББМО-01-23): CLI с аргументами, commander, inquirer, chalk/ora/cli-progress и полной архитектурой.",
+  "main": "bin/my-cli.js",
+  "bin": {
+    "my-cli": "./bin/my-cli.js"
+  },
+  "scripts": {
+    "start": "node bin/my-cli.js",
+    "test": "jest",
+    "link": "npm link",
+    "package": "pkg . --out-path dist"
+  },
+  "pkg": {
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-progress": "^3.12.0",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "pkg": "^5.8.1"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}
