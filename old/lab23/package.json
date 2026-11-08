@@ -1,0 +1,30 @@
+{
+  "name": "lab23-mongodb-nodejs",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №23: исследование методов работы с MongoDB средствами Node.js (ББМО-01-23)",
+  "private": true,
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "task1": "node mongodb-connect.js",
+    "task2": "node mongodb-crud.js",
+    "task3": "node mongodb-advanced.js",
+    "task4": "node mongodb-transactions.js",
+    "task5": "node server.js",
+    "seed": "node scripts/seed.js",
+    "demo": "node scripts/demo-requests.js",
+    "ws-client": "node scripts/ws-client.js",
+    "test": "node --test --test-reporter=spec",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down"
+  },
+  "dependencies": {
+    "@koa/router": "^13.1.0",
+    "dotenv": "^16.4.5",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "mongodb": "^6.10.0",
+    "ws": "^8.18.0"
+  }
+}
