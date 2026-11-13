@@ -1,0 +1,23 @@
+{
+  "name": "lab21-nodejs-streams",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №21: исследование методов работы с потоками в Node.js (ББМО-01-23)",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "task1": "node stream-readable.js",
+    "task2": "node stream-writable.js",
+    "task3": "node stream-pipe.js",
+    "task4": "node stream-transform.js",
+    "task5": "node stream-pipeline.js",
+    "all": "npm run task1 && npm run task2 && npm run task3 && npm run task4 && npm run task5",
+    "test": "node --test --test-reporter=spec",
+    "test:1": "node --test --test-reporter=spec tests/task1.readable.test.js",
+    "test:2": "node --test --test-reporter=spec tests/task2.writable.test.js",
+    "test:3": "node --test --test-reporter=spec tests/task3.pipe.test.js",
+    "test:4": "node --test --test-reporter=spec tests/task4.transform.test.js",
+    "test:5": "node --test --test-reporter=spec tests/task5.pipeline.test.js"
+  }
+}
