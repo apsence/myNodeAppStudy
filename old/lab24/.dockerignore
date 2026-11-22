@@ -1,0 +1,13 @@
+node_modules
+coverage
+uploads
+.git
+.github
+tests
+docs
+task1
+task2
+task3
+task4
+.env
+*.log
